@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=wwww.winbot.ir">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- header -->
+        <div class="app-header">
+            <!-- search input -->
+             <div class="search-input">
+                <input type="text" class="form-control" placeholder="Search among your notes..">
+                <div class="header-buttons-container">
+                  
+                    <!-- search button -->
+                    <!-- <button class="btn search-btn">
+                        <i class="fa fa-search"></i>
+                    </button> -->
+                    <!-- reload button -->
+                     <button title="refresh" class="btn reload-btn">
+                        <i class="fas fa-refresh"></i>
+                     </button>
+                     <!-- theme changer button -->
+                      <button title="theme changer" class="btn theme-changer-btn">
+                        <i class="fas fa-shirt"></i>
+                      </button>
+                    <!-- dark mode button -->
+                    <button title="dark mode button" class="btn dark-mode-btn" id="dark-mode-btn">
+                        <i class="fa fa-moon"></i>
+                    </button>
+                </div>
+             </div> 
+        </div>
+
+        <!-- card container -->
+        <div id="bookmarks-container" class="cards-container">
+            <!-- card import here -->
+
+            <!-- <div class="card">
+                <div class="card-body">
+                    <img class="card-img" src="https://picsum.photos/id/598/600/400" alt="">
+                    <a class="card-link" href="">
+                        google
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="card-buttons">
+                    <button title="copy the link" class="btn card-copy-btn">
+                        <i class="fa fa-copy"></i>
+                    </button>
+                    <button title="delete the link" class="btn card-delete-btn">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
+            </div> -->
+
+        </div>
+     </div>
+
+     <!-- modal -->
+      <div id="modal" class="modal-container">
+         <div class="modal">
+            <i class="fa fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form action="" id="bookmark-form">
+                    <!-- website name -->
+                     <div  class="form-group">
+                        <label class="form-label" for="website-name">website name</label>
+                        <input class="form-input" type="text" id="website-name">
+                     </div>
+                     <!-- website URL -->
+                     <div class="form-group">
+                        <label class="form-label" for="website-url">website URL</label>
+                        <input class="form-input" type="text" id="website-url" placeholder="example.com">
+                      </div>
+                      <span class="input-text">Enter the website URL without https:// or http:// please !</span>
+                     <!-- button -->
+                      <button class="submit-button">Add</button>
+                </form>
+            </div>
+          </div>
+      </div>
+
+      <!-- deleleted message modal -->
+      <div class="alert-container">
+        <!-- <div class="alert">
+            <h2 class="alert-title">sdsdssd</h2>
+            /// check box
+            <div class="checkbox-wrapper">
+                <div class="cbx">
+                  <input id="checkbox" type="checkbox"/>
+                  <label for="checkbox"></label>
+                  <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+                    <path d="M2 8.36364L6.23077 12L13 2"></path>
+                  </svg>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <filter id="goo-12">
+                      <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+                      <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></fecolormatrix>
+                      <feblend in="SourceGraphic" in2="goo-12"></feblend>
+                    </filter>
+                  </defs>
+                </svg>
+              </div>          
+        </div> -->
+      </div>
+
+        <!-- add bookmark button -->
+        <button title="add bookmark" class="btn" id="show-modal">
+            <i class="fa fa-plus"></i>
+        </button>
+
+      <!-- loader -->
+       <div class="loader-wrapper active"><div class="loader"></div> </div>
+    <!-- Script -->
+     <script src="./themes.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
