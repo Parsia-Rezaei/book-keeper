@@ -75,6 +75,7 @@ body {
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    user-select:none;
 }
  
 
@@ -137,6 +138,7 @@ body {
 
 .card-buttons button {
   margin-inline: 3px;
+  user-select: none;
 }
 
 .card-img {
@@ -238,6 +240,7 @@ body {
 .header-buttons-container > button {
   height: 50px;
   width: 50px;
+  user-select: none;
 }
 
 .form-control {
@@ -287,6 +290,7 @@ body {
   right: 0;
   bottom: 0;
   display: none;
+  z-index: 100;
 }
 
 .show-modal {
@@ -542,6 +546,7 @@ h3 {
   /* background-color: red; */
   overflow: hidden;
   padding: 0 15px;
+  z-index: 100;
 }
 .alert {
   background-color: var(--bg-dark);
